@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    background-color: #ECF0f3;
+    color: #616161;
+}
+
+.container {
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 66px;
+    width: 550px;
+    background-color: #ECF0f3;;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 13px;
+    box-shadow: 1px 9px 8px rgb(0.1, 0.1, 0.1 / 0.1); 
+    background: linear-gradient(#e2e5e9, #f0f4f8, #f5f9fb);
+    
+}
+
+.left {
+    position: absolute;
+   top: 22px; 
+   left: 50px;
+}
+
+.right {
+    position: absolute;
+    top: 22px;
+    right: 50px;
+}
+
+.rectangle {
+    position: absolute;
+    height: 15px;
+    width: 350px;
+    top: 28px;
+    left: 100px;
+    background-color: #ECF0f3;
+    /*box-shadow: 1px 0 12px rgb(0 0 0 / 0.2); */
+    background: linear-gradient(#e2e5e9, #f0f4f8, #f5f9fb);
+    border-radius: 13px;
+}
+
+.circle {
+position: absolute;
+top:9px;
+left: 89px;
+height: 45px;
+width: 45px;
+background-color: #ECF0f3;
+box-shadow: 3px 3px 12px rgb(0 0 0 / 0.1); 
+background: linear-gradient(#f2f6fa, #e8ecef);
+border-radius: 50px;
+z-index: 10;
+animation: move 2s infinite linear;
+}
+
+@keyframes move {
+50% {
+    margin-left: calc( 80% - 110px);
+}
+}
+
+.slider {
+    position: absolute;
+    height: 5.5px;
+    /*width: 344px; */
+    width: 0;
+    top: 32px;
+    left: 103px;
+    background-color: #F48A34;
+    border-radius: 13px;
+    animation: slide 2s infinite linear;
+}
+
+@keyframes slide {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: calc( 100% - 230px)
+    }
+}
